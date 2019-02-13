@@ -1,0 +1,5 @@
+mixin button(text, type, state, mixes)
+    button.button(
+        class='' + ((mixes) ? `${mixes}__button` : '' ) + (` button--${state}`)
+        type=`${type}`
+    ) #{text}

@@ -1,0 +1,46 @@
+-
+    var links = [
+        {
+            title: 'Gooddler Foundation',
+            href: '#'
+        },
+        {
+            title: 'About',
+            href: '#'
+        },
+        {
+            title: 'Terms',
+            href: '#'
+        },
+        {
+            title: 'Blog',
+            href: '#'
+        },
+        {
+            title: 'Careers',
+            href: '#'
+        }
+    ]
+
+mixin footer
+    footer.footer
+        .footer__wrap
+            .footer__links
+                ul.footer__list
+                    each link in links
+                        li.footer__item
+                            a.footer__link(href=`${link.href}`)= link.title
+            .footer__social-links
+                ul.footer__social-list
+                    li.footer__social-item
+                        a.footer__social-link(href='https://www.facebook.com/gooddler' target='_blank')
+                            include ./img/facebook.svg
+                    li.footer__social-item
+                        a.footer__social-link(href='https://twitter.com/GOODDler' target='_blank')
+                            include ./img/twitter.svg
+                    li.footer__social-item
+                        a.footer__social-link(href='https://www.youtube.com/user/gooddler' target='_blank')
+                            include ./img/youtube.svg
+                    li.footer__social-item
+                        a.footer__social-link(href='https://plus.google.com/+Gooddler' target='_blank')
+                            include ./img/google.svg

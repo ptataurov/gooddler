@@ -1,0 +1,93 @@
+-
+    var links = [
+        {
+            title: 'How it works',
+            href: '#'
+        },
+        {
+            title: 'My cart',
+            href: '#'
+        },
+        {
+            title: 'Sign in',
+            href: '#'
+        },
+        {
+            title: 'Create wishlist',
+            href: '#'
+        },
+        {
+            title: 'Blog',
+            href: '#'
+        },
+        {
+            title: 'About',
+            href: '#'
+        },
+        {
+            title: 'Contact',
+            href: '#'
+        },
+        {
+            title: 'Dashboard',
+            href: '#'
+        },
+        {
+            title: 'Get started',
+            href: '#'
+        }
+    ]
+
+mixin menu(mixes)
+    .menu(
+        class='' + ((mixes) ? `${mixes}__menu` : '')
+    )
+        .menu__wrap
+            include ./img/logo.svg
+            a.menu__link-how(
+                href='#'
+            ) How it works?
+            .menu__link-list
+                a.menu__link-cart(
+                    href='#'
+                ) My cart
+                a.menu__link-sign(
+                    href='#'
+                ) Sign in
+            button.menu__btn(
+                type='button'
+            ) Create wishlist
+            button.hamburger.menu__hamburger(type='button')
+                span.hamburger-box
+                    span.hamburger-inner
+    .menu__mobile
+        .menu__mobile-wrap
+            .menu__mobile-header
+                include ./img/gooddler-icon.svg
+                .menu__mobile-close
+                    | Close
+                    button.hamburger.menu__mobile-hamburger(type='button')
+                        span.hamburger-box
+                            span.hamburger-inner
+            ul.menu__mobile-list
+                each link in links
+                    li.menu__mobile-item
+                        .menu__mobile-item-wrap
+                            include ./img/menu-arrow.svg
+                            a.menu__mobile-link(href=`${link.href}`) #{link.title}
+            .menu__social-links
+                ul.menu__social-list
+                    li.menu__social-item
+                        a.menu__social-link(href='https://www.facebook.com/gooddler' target='_blank')
+                            include ./img/facebook.svg
+                    li.menu__social-item
+                        a.menu__social-link(href='https://twitter.com/GOODDler' target='_blank')
+                            include ./img/twitter.svg
+                    li.menu__social-item
+                        a.menu__social-link(href='https://www.youtube.com/user/gooddler' target='_blank')
+                            include ./img/youtube.svg
+                    li.menu__social-item
+                        a.menu__social-link(href='https://plus.google.com/+Gooddler' target='_blank')
+                            include ./img/google.svg
+
+

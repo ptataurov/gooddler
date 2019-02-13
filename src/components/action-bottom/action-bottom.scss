@@ -1,0 +1,36 @@
+.action-bottom {
+  padding: 26px 0;
+  background-color: #00A6E1;
+}
+
+.action-bottom__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @media (max-width: 1400px) {
+    padding: 0 20px;
+  }
+}
+
+.action-bottom__text {
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+  font-size: 26px;
+
+  @media (max-width: 720px) {
+    font-size: 16px;
+  }
+}
+
+// Mixes
+
+.action-bottom__button {
+
+  @media (max-width: 720px) {
+    padding: 17px 20px;
+  }
+}

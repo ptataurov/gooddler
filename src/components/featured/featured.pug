@@ -1,0 +1,25 @@
+mixin featured
+    section.featured
+        h4.featured__title
+            |   Featured
+            br
+            |   projects
+            .featured__arrow-div
+                include ./featured__arrow.svg
+            .featured__arrow-div
+                include ./featured__arrow.svg
+        .featured__slider
+            .featured__slider-wrap
+                ul.featured__slider-list
+                    each item in [80, 65, 32, 41, 10, 94, 71, 24]
+                        li.featured__slider-item
+                            a.featured__slider-link(href='')
+                                img.featured__slider-img(src='https://images.pexels.com/photos/1404825/pexels-photo-1404825.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt='' width='320' height='299')
+                            .featured__slider-footer
+                                p.featured__slider-text Shelter Supplies That Help Pets Find Homes
+                                button.featured__slider-btn(type='button') Go
+                                .featured__slider-progressbar
+                                    span.featured__slider-progressbar-value(style=`width: ${item}%`)
+        include ../button/button
+        +button('Create wishlist', 'button', 'green', 'featured')
+

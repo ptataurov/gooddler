@@ -1,0 +1,19 @@
+mixin header
+    header.header.fullpage
+        .header__wrap
+            include ../menu/menu
+            +menu('header')
+            .header__content
+                h1.header__title GOODdler:
+                h2.header__subtitle
+                    |Technology to Maximize the Impact
+                    br
+                    |of Humanitarian Action
+                include ../button/button
+                +button('Get started', 'button', 'outline', 'header')
+            img.header__plane(
+                src=require('../../components/header/header__plane.png')
+                width='215'
+            )
+            .header__arrow-div
+                include header__arrow.svg

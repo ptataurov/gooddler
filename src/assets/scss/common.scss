@@ -1,0 +1,44 @@
+@import '~normalize.css/normalize.css';
+@import './fonts';
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  font-weight: 400;
+  font-family: 'SF-UI-Display', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  transition: all 200ms;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.fixed {
+  position: fixed;
+  width: 100vw;
+}

@@ -1,0 +1,37 @@
+mixin about
+    section.about
+        .about__block
+            .about__left-side
+                img.about__left-side-img(src=require('../../components/about/img/app.png'))
+            .about__right-side
+                h5.about__subtitle Cover real-time needs
+                p.about__text
+                    |Gooddler is a “Gift Registry” for organizations to collect and manage goods donations from corporate and individual supporters.
+                    br
+                    br
+                    |Our partner organizations get goods when and where they need them, utilizing inventories of local merchants.
+                include ../button/button
+                +button('Create wishlist', 'button', 'green', 'about')
+        .about__block
+            .about__left-side
+                img.about__left-side-img(src=require('../../components/about/img/dashboard.png'))
+            .about__right-side
+                h5.about__subtitle Expand your supporter base
+                p.about__text
+                    |Gooddler platform delivers actionable insights, data and analytics, about corporate and individual supporters for empowered decision making.
+                p.about__text Learn more:
+                include ../button/button
+                +button('Contact us', 'button', 'blue', 'about')
+        .about__block
+            .about__left-side
+                img.about__left-side-img(src=require('../../components/about/img/admin.png'))
+                img.about__left-side-img(src=require('../../components/about/img/admin-mob.png'))
+            .about__right-side
+                .about__sub-block
+                    h5.about__subtitle Digitizing inventory of local merchants
+                    p.about__text
+                        |Gooddler digitizes inventory of local merchants and allows providers of humanitarian assistance create wishllists based on the specific needs of beneficiaries utilizing local resources, minimizing waste.
+                .about__sub-block
+                    h5.about__subtitle Collecting data
+                    p.about__text
+                        |Gooddler collects data on availability of goods in the area of assistance and specific needs of the beneficiaries. It is a digital platform where private and institutional donors can see the vetted requirements of any humanitarian organization and connect to respond to them.

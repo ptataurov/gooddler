@@ -1,0 +1,41 @@
+include ../button/button
+
+mixin projects
+    section.projects
+        ul.projects__list
+            -
+                var items =[
+                    {
+                        title: 'International Development',
+                        text: 'Maximizing the effectiveness of Aid and Development by mobilizing sustainable local knowledge and resource management',
+                        imgSrc: require('../../components/projects/img/development.png'),
+                        btnText: 'Contact Us'
+                    },
+                    {
+                        title: 'Government',
+                        text: 'Helping governments to deliver more efficient services by connecting community needs with local resources',
+                        imgSrc: require('../../components/projects/img/gov.png'),
+                        btnText: 'Contact Us'
+                    },
+                    {
+                        title: 'Charities',
+                        text: 'Supporting local businesses by enabling them to become first responders to the unmet needs in their own communities',
+                        imgSrc: require('../../components/projects/img/charities.png'),
+                        btnText: 'Create wishlist'
+                    },
+                    {
+                        title: 'Business',
+                        text: 'Improving efficiency of charitable organizations by providing them with tech solutions to collect and manage goods donations',
+                        imgSrc: require('../../components/projects/img/business.png'),
+                        btnText: 'Add your business'
+                    }
+                ]
+            each item in items
+                li.projects__item
+                    .projects__item-front(style=`background-image: url(${item.imgSrc})`)
+                        h5.project__item-title #{item.title}
+                        +button(`${item.btnText}`, 'button', 'outline', 'projects')
+                    .projects__item-back(style=`background-image: url(${item.imgSrc})`)
+                        h5.project__item-title #{item.title}
+                        p.project__item-text #{item.text}
+                        +button(`${item.btnText}`, 'button', 'outline', 'projects')

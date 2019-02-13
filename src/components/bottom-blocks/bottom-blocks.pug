@@ -1,0 +1,19 @@
+mixin bottom-blocks
+    section.bottom-blocks
+        .bottom-blocks__left
+            img.bottom-blocks__img(src=require('../../components/bottom-blocks/img/left.png'))
+            .bottom-blocks__content
+                h6.bottom-blocks__subtitle Disaster preparedness and recovery
+                p.bottom-blocks__text Increasing resiliency of communities by equipping them with tools to become first responders to any humanitarian crisis.
+                include ../button/button
+                +button('Contact us', 'button', 'blue', 'bottom-blocks')
+        .bottom-blocks__right
+            img.bottom-blocks__img(src=require('../../components/bottom-blocks/img/right.png'))
+            .bottom-blocks__content
+                h6.bottom-blocks__subtitle
+                    |International
+                    br
+                    |Development
+                p.bottom-blocks__text Creating systemic change by enabling communities to solve their own problems through social entrepreneurship and collaboration.
+                include ../button/button
+                +button('Contact us', 'button', 'blue', 'bottom-blocks')

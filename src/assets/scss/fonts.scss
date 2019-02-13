@@ -1,0 +1,49 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'Gooddler';
+  font-style: normal;
+  src:
+          url('../fonts/woff2/Gooddler-Regular.woff2') format('woff2'),
+          url('../fonts/woff/Gooddler-Regular.woff') format('woff'),
+          url('./../../assets/fonts/otf/Gooddler-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'SF-UI-Display';
+  font-style: normal;
+  src:
+          url('../fonts/woff2/SF-UI-Display-Medium.woff2') format('woff2'),
+          url('../fonts/woff/SF-UI-Display-Medium.woff') format('woff'),
+          url('./../../assets/fonts/otf/SF-UI-Display-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'SF-UI-Display';
+  font-style: normal;
+  src:
+          url('../fonts/woff2/SF-UI-Display-Regular.woff2') format('woff2'),
+          url('../fonts/woff/SF-UI-Display-Regular.woff') format('woff'),
+          url('./../../assets/fonts/otf/SF-UI-Display-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'SF-UI-Display';
+  font-style: normal;
+  src:
+          url('../fonts/woff2/SF-UI-Display-Light.woff2') format('woff2'),
+          url('../fonts/woff/SF-UI-Display-Light.woff') format('woff'),
+          url('./../../assets/fonts/otf/SF-UI-Display-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-weight: 200;
+  font-family: 'SF-UI-Display';
+  font-style: normal;
+  src:
+          url('../fonts/woff2/SF-UI-Display-Ultralight.woff2') format('woff2'),
+          url('../fonts/woff/SF-UI-Display-Ultralight.woff') format('woff'),
+          url('./../../assets/fonts/otf/SF-UI-Display-Ultralight.otf') format('opentype');
+}

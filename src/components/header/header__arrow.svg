@@ -1,0 +1,9 @@
+<svg class="header__arrow" width="14px" height="35px" viewBox="0 0 14 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fill" transform="translate(-712.000000, -721.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="arrow_down" transform="translate(712.000000, 721.000000)">
+                <polygon id="Shape" points="6.79 34.88 13.81 28.2 12.72 27.12 7.71 31.88 7.71 0 6.17 0 6.17 32.13 1.09 27.05 0 28.14 6.75 34.88 6.77 34.85"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

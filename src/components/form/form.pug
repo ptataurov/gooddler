@@ -1,0 +1,36 @@
+mixin form
+    .form
+        .form__content
+            include ./gooddler-icon.svg
+            button.form__close(type='button') Close
+            .form__wrap
+                p.form__mail-link
+                    |General Inquiries:
+                    |
+                    a(href='mailto:info@gooddler.com') info@gooddler.com
+                p.form__mail-link
+                    |Tech Support:
+                    |
+                    a(href='mailto:support@gooddler.com') support@gooddler.com
+
+                form.form__self(action='')
+                    .form__field
+                        label.form__label(for='name') First name
+                        input#name.form__input(type='text', name='name', placeholder='First name')
+                    .form__field
+                        label.form__label(for='last-name') Last name
+                        input#last-name.form__input(type='text', name='last-name', placeholder='Last name')
+                    .form__field
+                        label.form__label(for='email') Email
+                        input#email.form__input(type='text', name='email', placeholder='E-mail')
+                    .form__field
+                        label.form__label(for='phone') Phone
+                        input#phone.form__input(type='text', name='phone', placeholder='Phone')
+                    .form__field
+                        label.form__label(for='org') Organization
+                        input#org.form__input(type='text', name='org', placeholder='Organization')
+                    .form__field
+                        label.form__label(for='message') Message
+                        textarea#message.form__input(name='message', placeholder='Message' rows='6')
+                    include ../button/button
+                    +button("I'm GOOD", 'submit', 'green', 'form')
